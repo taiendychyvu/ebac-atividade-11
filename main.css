@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgb(221, 220, 220);
+}
+
+header {
+    background-color: rgb(26, 6, 214);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.cabecalho,
+.about  {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 16px;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 510;
+}
+
+h1 {
+    padding: 12px;
+    color: #fff;
+    font-style: italic;
+}
+
+.titulo-small {
+    display: none;
+}
+
+.about-texto {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+h2 {
+    border-bottom: 2px solid rgb(26, 6, 214);;
+    padding-bottom: 16px;
+    color:  rgb(26, 6, 214);
+    font-style: italic;
+}
+
+.about-texto p {
+    margin-top: 30px;
+}
+
+.produtos {
+    margin-top: 40px;
+}
+
+article {
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 2%;
+}
+
+.grade-produtos h3 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.grade-produtos p {
+    text-align: center;
+}
+
+.grade-produtos button {
+    color: #fff;
+    width: 100%;
+    background-color: rgb(26, 6, 214);
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.grade-produtos button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .about  {
+    display: block;
+    }
+
+    .about-texto {
+        margin-left: 0px;
+    }
+
+    .grade-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .grade-produtos button {
+        color: #fff;
+        width: 80%;
+        background-color: rgb(26, 6, 214);
+        margin-top: 10px auto;
+        border-radius: 5px;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .grade-produtos h3 {
+        margin: 10px;
+    }
+    
+    .grade-produtos p {
+        
+    }
+
+    .produtos-articles  {
+        max-width: 100%;
+        background-color: red;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .titulo-small {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .cabecalho  {
+    max-width: 90%x;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 16px;
+        
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .about {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .grade-produtos {
+        display: block;
+    }
+
+    .about-texto {
+        margin-left: 0px;
+    }
+
+    .titulo-big {
+        display: none;
+    }
+    .titulo-small {
+        display: inline;
+    }
+    
+}
